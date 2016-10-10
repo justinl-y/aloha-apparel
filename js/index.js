@@ -23,10 +23,16 @@ $(document).ready(function() {
 
     console.log($product_category_html);*/
 
+    //code for flickity plugin functionality
     $('.main-carousel').flickity({
         // options
         cellAlign: 'left',
         contain: true
+    });
+
+    //code for smooth scrolling plugin functionality
+    $('body').smoothScroll ({
+        delegateSelector: 'ul.mainnav a'
     });
 
     /*var existingScreenSize = 0;
@@ -67,8 +73,40 @@ $(document).ready(function() {
         }
     });*/
 
-    $('body').smoothScroll({
-        delegateSelector: 'ul.mainnav a'
+
+
+
+
+    //add box shadow to subscribe form input on focus and remove default text
+    $('.subscribe input[type="text"]').on('focus', function(){
+        $(this).css('box-shadow','2px 2px 7px #111111');
+        $(this).val('');
+    });
+
+    //remove box shadow from form input on blur and return default text on no entry
+    $('.subscribe input[type="text"]').on('blur', function(){
+        $(this).css('box-shadow', 'none');
+
+        if ($(this).val().length === 0) {
+            $(this).val('Your Email');
+        }
+    });
+
+    //submit button validation and form submission
+    $('.subscribe input[type="button"]').on('click', function(e){
+        e.preventDefault();
+
+        var email = $('.subscribe input[type="text"]').val();
+        var emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
+
+        if ( email.length === 0 || !emailPattern.test(email) ) {
+            alert('Please enter a valid email.');
+        } else {
+            //off to php we go
+            $('#subscribe-form').submit();
+
+            alert('Thanks for subscribing.');
+        }
     });
 
 });
