@@ -660,6 +660,18 @@
         .social-media span {
             display: inline;
         }
+
+        .social-media i {
+            margin-right: 15px;
+        }
+
+        .social-media .fa-facebook {
+            margin-right: 21px;
+        }
+
+        .social-media .fa-google-plus {
+            margin-right: 9px;
+        }
     }
 
     /*desktop size css*/
