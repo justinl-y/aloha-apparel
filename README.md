@@ -21,4 +21,8 @@ Jquery learnings
 
 - JQuery 3.1.1 - http://jquery.com/
 - Flickity 2.0.4 - https://github.com/metafizzy/flickity
-- Smooth Scroll 2.0.1: https://github.com/kswedberg/jquery-smooth-scroll
+- Smooth Scroll 2.0.1 - https://github.com/kswedberg/jquery-smooth-scroll
+
+## Known Issues
+- Count bubble showing behind cart image instead of on top.
+- Test in FireFox revealed non-show of product categories.

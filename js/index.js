@@ -73,9 +73,24 @@ $(document).ready(function() {
         }
     });*/
 
+    //count bubble for shopping cart items
+    var cartItemsCounter = 0;
+    $('.count-bubble').hide();
 
+    $('.carousel-cell input[type="button"]').on('click', function(e) {
+        e.preventDefault();
 
+        cartItemsCounter++;
 
+        if (cartItemsCounter === 0 ) {
+            $('.count-bubble').hide();
+        } else {
+            $('.count-bubble').show();
+            //alert(cartItemsCounter);
+            $('.count-bubble').text(cartItemsCounter);
+        }
+
+    });
 
     //add box shadow to subscribe form input on focus and remove default text
     $('.subscribe input[type="text"]').on('focus', function(){

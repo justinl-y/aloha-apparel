@@ -169,6 +169,22 @@
                 justify-content: flex-end;
             }
 
+            .cart-img a img {
+                z-index: -1;
+            }
+
+            .count-bubble {
+                z-index: 1;
+                text-align: center;
+                width: 25px;
+                float: right;
+                margin-top: -42px;
+                margin-left: 35px;
+                background: #e2574c;
+                color: #fff;
+                padding: 2px;
+            }
+
     /*banner section*/
     .banner {
         margin-top: 0.75rem;
