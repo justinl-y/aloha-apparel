@@ -131,6 +131,11 @@
 
     .navigation li {
         display: inline;
+        padding-right: 0.75rem;
+    }
+
+    .navigation li:last-child  {
+        padding-right: 0;
     }
 
     .navigation a {
@@ -138,12 +143,6 @@
         text-decoration: none;
         text-transform: uppercase;
         color: #e2574c;
-
-        padding-right: 0.5rem;
-    }
-
-    .navigation a:last-child  {
-        //padding-right: 0;
     }
 
     .navigation a:visited {
@@ -509,14 +508,17 @@
         }
 
         .logo-image {
-            flex-basis: 25%;
+            flex-basis: 20%;
             order: 1;
-
-            //padding-bottom: 0;
         }
         .navigation {
-            flex-basis: 50%;
+            flex-basis: 60%;
             order: 2;
+        }
+
+        .cart-image {
+            flex-basis: 20%;
+            order: 3;
         }
 
         .navigation nav {
@@ -524,13 +526,12 @@
             padding: 0;
         }
 
-        .navigation a {
+        .navigation li {
             padding-right: 1.5rem;
         }
 
-        .cart-image {
-            flex-basis: 25%;
-            order: 3;
+        .navigation li:last-child  {
+            padding-right: 0;
         }
 
         /*tablet banner-section*/

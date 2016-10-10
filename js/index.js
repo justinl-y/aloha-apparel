@@ -1,40 +1,6 @@
 'use strict';
 
-var product_categories = [
-    'images/product-categories/mens-category.jpg',
-    'images/product-categories/trends-category.jpg',
-    'images/product-categories/glasses-category.jpg',
-    'images/product-categories/sale-category.jpg',
-    'images/product-categories/bags-category.jpg',
-    'images/product-categories/womens-category.jpg'
-];
-
 $(document).ready(function() {
-
-    /*alert(product_categories.length);
-
-    var $product_category_html = $('.product-categories div a').html();
-    var index = 0;
-
-    $product_category_html.each(function () {
-        $(this).attr('src', product_categories[i]);
-        i++;
-    });
-
-    console.log($product_category_html);*/
-
-    //code for flickity plugin functionality
-    $('.main-carousel').flickity({
-        // options
-        cellAlign: 'left',
-        contain: true
-    });
-
-    //code for smooth scrolling plugin functionality
-    $('body').smoothScroll ({
-        delegateSelector: 'ul.mainnav a'
-    });
-
     /*var existingScreenSize = 0;
 
     $(window).resize(function() {
@@ -73,6 +39,18 @@ $(document).ready(function() {
         }
     });*/
 
+    //flickity plugin functionality
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true
+    });
+
+    //smooth scrolling plugin functionality
+    $('body').smoothScroll ({
+        delegateSelector: 'ul.mainnav a'
+    });
+
     //count bubble for shopping cart items
     var cartItemsCounter = 0;
     $('.count-bubble').hide();
@@ -86,7 +64,6 @@ $(document).ready(function() {
             $('.count-bubble').hide();
         } else {
             $('.count-bubble').show();
-            //alert(cartItemsCounter);
             $('.count-bubble').text(cartItemsCounter);
         }
 
