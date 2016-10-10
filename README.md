@@ -11,11 +11,11 @@ This project was designed to demonstrate advanced features of CSS and implementa
 
 ## Personal Learning
 
-Building on the framework of HTML5 and CSS3 from project-01a this project allowed me to learn some advanced features of CSS3 such as flexbox.
+Building on the framework of HTML5 and CSS3 from project-01a this project allowed me to understand some advanced aspects of CSS3 layout such as flexbox.
   
-Javascript learnings
+Implementation of functionality for email validation allowed me to understand control statements.
 
-Jquery learnings
+Use of JQuery allowed me to understand manipulation of DOM elements and integration of the project with JQuery plugins.
 
 ## References for JQuery and JQuery Plugins
 
@@ -25,4 +25,4 @@ Jquery learnings
 - JQuery Mobile 1.4.5 - http://jquerymobile.com/
 
 ## Known Issues
-- Test in Firefox revealed non-show of product categories.
+- Browser tests revealed no-show of product categories in Firefox.

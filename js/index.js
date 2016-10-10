@@ -1,54 +1,16 @@
 'use strict';
 
 $(document).ready(function() {
-    /*var existingScreenSize = 0;
-
-    $(window).resize(function() {
-        var currentScreenSize = 0;
-
-        if ($(this).width() < 600) {
-            currentScreenSize = 1;
-
-            if (!(currentScreenSize === existingScreenSize)) {
-                existingScreenSize = currentScreenSize;
-
-                //alert('screen = mobile');
-
-                $('.carousel-main').attr('data-flickity', '{ "groupCells": 1 }');
-            }
-        } else if ($(this).width() >= 600 && $(this).width() < 1240) {
-            currentScreenSize = 2;
-
-            if (!(currentScreenSize === existingScreenSize)) {
-                existingScreenSize = currentScreenSize;
-
-                //alert('screen = tablet');
-
-                $('.carousel-main').attr('data-flickity', '{ "groupCells": 2 }');
-            }
-        } else if ($(this).width() >= 1240 ) {
-            currentScreenSize = 3;
-
-            if (!(currentScreenSize === existingScreenSize)) {
-                existingScreenSize = currentScreenSize;
-
-                //alert('screen = desktop');
-
-                $('.carousel-main').attr('data-flickity', '{ "groupCells": 4 }');
-            }
-        }
-    });*/
+    //smooth scrolling plugin functionality
+    $('body').smoothScroll ({
+        delegateSelector: 'ul.mainnav a'
+    });
 
     //flickity plugin functionality
     $('.main-carousel').flickity({
         // options
         cellAlign: 'left',
         contain: true
-    });
-
-    //smooth scrolling plugin functionality
-    $('body').smoothScroll ({
-        delegateSelector: 'ul.mainnav a'
     });
 
     //count bubble for shopping cart items
@@ -101,4 +63,42 @@ $(document).ready(function() {
         }
     });
 
+    /*not used but useful code for capturing screen resolutions and modifying CSS in jquery
+     var existingScreenSize = 0;
+
+     $(window).resize(function() {
+         var currentScreenSize = 0;
+
+         if ($(this).width() < 600) {
+            currentScreenSize = 1;
+
+            if (!(currentScreenSize === existingScreenSize)) {
+                existingScreenSize = currentScreenSize;
+
+                //alert('screen = mobile');
+
+                $('.carousel-main').attr('data-flickity', '{ "groupCells": 1 }');
+            }
+         } else if ($(this).width() >= 600 && $(this).width() < 1240) {
+            currentScreenSize = 2;
+
+            if (!(currentScreenSize === existingScreenSize)) {
+                existingScreenSize = currentScreenSize;
+
+                //alert('screen = tablet');
+
+                $('.carousel-main').attr('data-flickity', '{ "groupCells": 2 }');
+            }
+         } else if ($(this).width() >= 1240 ) {
+            currentScreenSize = 3;
+
+            if (!(currentScreenSize === existingScreenSize)) {
+                existingScreenSize = currentScreenSize;
+
+                //alert('screen = desktop');
+
+                $('.carousel-main').attr('data-flickity', '{ "groupCells": 4 }');
+            }
+         }
+     });*/
 });
