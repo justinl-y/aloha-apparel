@@ -9,5 +9,6 @@ ehthumbs.db
 *.Trashes
 # Ignore npm packages
 node_modules/
+# Ignore system folders
 assets/
 .idea/
