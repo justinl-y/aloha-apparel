@@ -22,6 +22,7 @@ Jquery learnings
 - JQuery 3.1.1 - http://jquery.com/
 - Flickity 2.0.4 - https://github.com/metafizzy/flickity
 - Smooth Scroll 2.0.1 - https://github.com/kswedberg/jquery-smooth-scroll
+- JQuery Mobile 1.4.5 - http://jquerymobile.com/
 
 ## Known Issues
-- Test in FireFox revealed non-show of product categories.
+- Test in Firefox revealed non-show of product categories.
