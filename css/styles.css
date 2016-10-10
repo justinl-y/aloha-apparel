@@ -76,11 +76,11 @@
         font-size: 1.5rem;
     }
 
-    .section-header em {
+    .section-header .header-italic {
         font-family: 'Playfair Display Regular Italic', "Times New Roman", serif;
     }
 
-    .section-header strong {
+    .section-header .header-bold {
         font-family: 'Playfair Display Bold', "Times New Roman", serif;
     }
 
