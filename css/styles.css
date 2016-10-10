@@ -98,7 +98,7 @@
         flex-flow: row wrap;
         align-items: center;
 
-        //position: fixed;
+        /*position: fixed; for fixed header stretch*/
     }
 
     .header-contents img {
@@ -171,7 +171,6 @@
         background: #e2574c;
         color: #fff;
         padding: 2px;
-        //border-radius: 5px;
     }
 
     /*banner section*/
@@ -202,12 +201,12 @@
         text-shadow: 2px 2px 7px #111111;
     }
 
-    .banner-text h1 {
+    .banner-text h2 {
         font-size: 2rem;
         font-family: 'Playfair Display Regular', "Times New Roman", serif;
     }
 
-    .banner-text h2 {
+    .banner-text h3 {
         font-size: 0.75rem;
         font-family: 'Raleway Medium', Helvetica, sans-serif;
         text-transform: uppercase;
@@ -447,7 +446,7 @@
     }
 
     .footer-contents {
-        //max-width: 1240px;
+        /*max-width: 1240px;*/
         text-align: center;
     }
 
@@ -540,11 +539,11 @@
             height: 400px;
         }
 
-        .banner-text h1 {
+        .banner-text h2 {
             font-size: 3rem;
         }
 
-        .banner-text h2 {
+        .banner-text h3 {
             font-size: 1rem;
         }
 
