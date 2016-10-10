@@ -61,18 +61,10 @@
         font-style: normal;
     }
 
-    /*helper classes*/
-    /*.clearfix:after {
-        content: '';
-        clear: both;
-        display: table;
-    }*/
-
     * {
         box-sizing: border-box;
         outline: none;
     }
-
 
     .seo-description {
         display: none;
@@ -102,96 +94,93 @@
     /*header section*/
     .header-contents {
         margin: 0.75rem;
-
         display: flex;
         flex-flow: row wrap;
         align-items: center;
 
+        //position: fixed;
     }
 
-        .header-contents img {
-            height: 50px;
-            width: auto;
+    .header-contents img {
+        height: 50px;
+        width: auto;
+        padding-bottom: 0.75rem;
+    }
 
-            padding-bottom: 0.75rem;
-        }
+    .logo-image {
+        flex-basis: 50%;
+        order: 1;
+    }
 
-        .logo-image {
-            flex-basis: 50%;
-            order: 1;
-        }
+    .logo-image img {
+        display: flex;
+        justify-content: flex-start;
+    }
 
-            .logo-image img {
-                display: flex;
-                justify-content: flex-start;
-            }
+    .navigation {
+        flex-basis: 100%;
+        order: 3;
+    }
 
-        .navigation {
-            flex-basis: 100%;
-            order: 3;
-        }
+    .navigation nav {
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #d7d7d7;
+        padding-top: 0.75rem;
+    }
 
-            .navigation nav {
-                display: flex;
-                justify-content: center;
+    .navigation li {
+        display: inline;
+    }
 
-                border-top: 1px solid #d7d7d7;
+    .navigation a {
+        font-family: 'Raleway Medium', Helvetica, sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #e2574c;
 
-                padding-top: 0.75rem;
-            }
+        padding-right: 0.5rem;
+    }
 
-                .navigation li {
-                    display: inline;
-                }
-                .navigation li a {
-                    font-family: 'Raleway Medium', Helvetica, sans-serif;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    color: #e2574c;
+    .navigation a:last-child  {
+        //padding-right: 0;
+    }
 
-                    padding-right: 1rem;
-                }
+    .navigation a:visited {
+        color: #b64036;
+    }
 
-                .navigation li a:last-child  {
-                    //padding-right: 0;
-                }
+    .cart-image {
+        flex-basis: 50%;
+        order: 2;
+    }
+    .cart-image a {
+        display: flex;
+        justify-content: flex-end;
+    }
 
-                .navigation a:visited {
-                    color: #b64036;
-                }
+    .cart-image img {
+        z-index: -1;
+    }
 
-        .cart-image {
-            flex-basis: 50%;
-            order: 2;
-        }
-            .cart-image a {
-                display: flex;
-                justify-content: flex-end;
-            }
-
-            .cart-image a img {
-                z-index: -1;
-            }
-
-            .count-bubble {
-                text-align: center;
-                width: 25px;
-                float: right;
-                margin-top: -50px;
-                margin-left: 35px;
-                background: #e2574c;
-                color: #fff;
-                padding: 2px;
-            }
+    .count-bubble {
+        text-align: center;
+        width: 22px;
+        float: right;
+        margin-top: -50px;
+        margin-left: 35px;
+        background: #e2574c;
+        color: #fff;
+        padding: 2px;
+    }
 
     /*banner section*/
     .banner {
         margin-top: 0.75rem;
-
         height: 350px;
 
         background: linear-gradient(rgba(105,105,105,0.25), rgba(105,105,105,0.25)),
-            url("../images/banner-girl.png") no-repeat center bottom,
+            url("../images/banner-girl.png") center bottom no-repeat,
             url("../images/flower-bkgd.jpg") center bottom;
 
         background-size: cover,
@@ -227,7 +216,6 @@
 
     /*about section*/
     .about {
-        //border-bottom: 1px solid #d7d7d7;
         text-align: center;
     }
 
@@ -241,16 +229,19 @@
     .product-categories {
         display: flex;
         flex-flow: row wrap;
-
         text-align: center;
     }
 
     .product-img-wide {
         flex: 2 0 100%;
+        position: relative;
+        padding-bottom: 50%;
     }
 
     .product-img-narrow {
         flex: 1 0 50%;
+        position: relative;
+        padding-bottom: 50%;
     }
 
     .product-categories-text-formatting {
@@ -267,73 +258,43 @@
     }
 
     .product-categories-mens {
-        position: relative;
-
         background: linear-gradient(rgba(105,105,105,0.25), rgba(105,105,105,0.25)), url("../images/product-categories/mens-category.jpg") no-repeat center center;
         background-size: cover, cover;
-
-        padding-bottom: 50%;
-
         border-top: 4px solid white;
         border-bottom: 4px solid white;
     }
 
     .product-categories-trends {
-        position: relative;
-
         background: linear-gradient(rgba(105,105,105,0.25), rgba(105,105,105,0.25)), url("../images/product-categories/trends-category.jpg") no-repeat center center;
         background-size: cover, cover;
-
-        padding-bottom: 50%;
-
         border: 4px solid white;
         border-left: 0;
     }
 
     .product-categories-glasses {
-        position: relative;
-
         background: linear-gradient(rgba(105,105,105,0.25), rgba(105,105,105,0.25)), url("../images/product-categories/glasses-category.jpg") no-repeat center center;
         background-size: cover, cover;
-
-        padding-bottom: 50%;
-
         border: 4px solid white;
         border-right: 0;
     }
 
     .product-categories-sale {
-        position: relative;
-
         background: linear-gradient(rgba(105,105,105,0.25), rgba(105,105,105,0.25)), url("../images/product-categories/sale-category.jpg") no-repeat center center;
         background-size: cover, cover;
-
-        padding-bottom: 50%;
-
         border: 4px solid white;
         border-left: 0;
     }
 
     .product-categories-bags {
-        position: relative;
-
         background: linear-gradient(rgba(105,105,105,0.25), rgba(105,105,105,0.25)), url("../images/product-categories/bags-category.jpg") center bottom no-repeat;
         background-size: cover, cover;
-
-        padding-bottom: 50%;
-
         border: 4px solid white;
         border-right: 0;
     }
 
     .product-categories-womens {
-        position: relative;
-
         background: linear-gradient(rgba(105,105,105,0.25), rgba(105,105,105,0.25)), url("../images/product-categories/womens-category.jpg") center bottom no-repeat;
         background-size: cover, cover;
-
-        padding-bottom: 50%;
-
         border-top: 4px solid white;
         border-bottom: 4px solid white;
     }
@@ -344,8 +305,8 @@
     }
 
     .carousel-cell {
-        width: 100%; /* full width */
-        height: auto; /* height of carousel */
+        width: 100%; /*full width*/
+        height: auto; /*height of carousel*/
         margin-right: 10px;
     }
 
@@ -355,11 +316,11 @@
         text-align: center;
     }
 
-    .products div a {
+    .products a {
         text-decoration: none;
     }
 
-    .products div img {
+    .products img {
         max-width: 50%;
         height: auto;
     }
@@ -398,10 +359,6 @@
         background-color: #242424;
         color: white;
     }
-
-    /*.products input[type="button"]:hover {
-        background-color: #b64036;
-    }*/
 
     /*subscribe section*/
     .subscribe {
@@ -481,55 +438,55 @@
         padding-bottom: 3rem;
     }
 
-        .citation a:link, .social-media a:link, .citation a:visited, .social-media a:visited {
-            color: white;
-        }
+    .citation a:link, .social-media a:link, .citation a:visited, .social-media a:visited {
+        color: white;
+    }
 
-        .citation a:hover, .social-media a:hover {
-            color: #b64036;
-        }
+    .citation a:hover, .social-media a:hover {
+        color: #b64036;
+    }
 
-        .footer-contents {
-            //max-width: 1240px;
-            text-align: center;
-        }
+    .footer-contents {
+        //max-width: 1240px;
+        text-align: center;
+    }
 
-            .citation {
-                font-family: 'Playfair Display Regular', "Times New Roman", serif;
-                line-height: 1.25rem;
-            }
+    .citation {
+        font-family: 'Playfair Display Regular', "Times New Roman", serif;
+        line-height: 1.25rem;
+    }
 
-                .copyright, .contact, .social-media {
-                    color: white;
-                }
+    .copyright, .contact, .social-media {
+        color: white;
+    }
 
-                .copyright {
-                    margin-bottom: 1rem;
-                }
+    .copyright {
+        margin-bottom: 1rem;
+    }
 
-                address {
-                    margin: 1rem auto 0 auto;
-                    width: 150px;
-                    color: #969696;
-                }
+    address {
+        margin: 1rem auto 0 auto;
+        width: 150px;
+        color: #969696;
+    }
 
-            .social-media {
-                margin-top: 1.5rem;
-                line-height: 1.75rem;
-            }
+    .social-media {
+        margin-top: 1.5rem;
+        line-height: 1.75rem;
+    }
 
-                .social-media a {
-                    text-decoration: none;
-                }
+    .social-media a {
+        text-decoration: none;
+    }
 
-                .social-media span {
-                    display: none;
-                }
+    .social-media span {
+        display: none;
+    }
 
-                .social-media li {
-                    margin: 0.25rem;
-                    display: inline;
-                }
+    .social-media li {
+        margin: 0.25rem;
+        display: inline;
+    }
 
     /*tablet size css*/
     @media screen and (min-width: 600px) {
@@ -540,7 +497,7 @@
             font-size: 1.75rem;
         }
 
-        /*header section*/
+        /*tablet header section*/
         .header-contents {
             margin: 1rem;
             flex-flow: row nowrap;
@@ -566,12 +523,16 @@
             padding: 0;
         }
 
+        .navigation a {
+            padding-right: 1.5rem;
+        }
+
         .cart-image {
             flex-basis: 25%;
             order: 3;
         }
 
-        /*banner-section*/
+        /*tablet banner-section*/
         .banner {
             margin-top: 1rem;
             height: 400px;
@@ -585,13 +546,13 @@
             font-size: 1rem;
         }
 
-        /*about section*/
+        /*tablet about section*/
         .about p {
             max-width: 600px;
             margin: 0 auto 4rem auto;
         }
 
-        /*product categories section*/
+        /*tablet product categories section*/
         .product-categories-text-formatting {
             font-size: 2rem;
         }
@@ -606,13 +567,11 @@
 
         .product-categories-mens {
             padding-bottom: 25%;
-
             border-right: 4px solid white;
         }
 
         .product-categories-trends {
             padding-bottom: 25%;
-
             border-left: 4px solid white;
         }
 
@@ -626,18 +585,15 @@
 
         .product-categories-bags {
             padding-bottom: 25%;
-
             border-right: 4px solid white;
         }
 
         .product-categories-womens {
             padding-bottom: 25%;
-
             border-left: 4px solid white;
         }
 
-
-        /*products section*/
+        /*tablet products section*/
         .carousel-cell {
             width: 50%; /* half-width */
         }
@@ -646,13 +602,7 @@
             font-size: 1rem;
         }
 
-        /*.products div {
-            //display: inline-block;
-            //width: 49.5%;
-            //margin-bottom: 4rem;
-        }*/
-
-        /*subscribe section*/
+        /*tablet subscribe section*/
         .subscribe-contents {
             width: 600px;
         }
@@ -673,7 +623,7 @@
             right: 1.3rem;
         }
 
-        /*footer section*/
+        /*tablet footer section*/
         footer {
             display: flex;
             justify-content: center;
@@ -682,33 +632,33 @@
             padding-bottom: 4rem;
         }
 
-            .footer-contents {
-                display: flex;
-                justify-content: space-between;
+        .footer-contents {
+            display: flex;
+            justify-content: space-between;
 
-                width: 1240px;
-                text-align: left;
-            }
+            width: 1240px;
+            text-align: left;
+        }
 
-                .citation {
-                    margin: 0 0 0 1.5rem;
-                }
+        .citation {
+            margin: 0 0 0 1.5rem;
+        }
 
-                    address {
-                        margin: 1rem 0 0 0;
-                    }
+        address {
+            margin: 1rem 0 0 0;
+        }
 
-                .social-media {
-                    margin: 0 4rem 0 0;
-                }
+        .social-media {
+            margin: 0 4rem 0 0;
+        }
 
-                    .social-media li {
-                        display: list-item;
-                    }
+        .social-media li {
+            display: list-item;
+        }
 
-                    .social-media span {
-                        display: inline;
-                    }
+        .social-media span {
+            display: inline;
+        }
     }
 
     /*desktop size css*/
@@ -723,25 +673,20 @@
             margin: auto;
         }
 
-        /*banner-section*/
+        /*desktop banner-section*/
         .banner {
             height: 500px;
         }
 
-        /*about section*/
+        /*desktop about section*/
         .about p {
             width: 615px;
         }
 
-        /*products section*/
+        /*desktop products section*/
         .carousel-cell {
             width: 25%; /* quarter-width */
         }
-        /*.products div {
-            display: inline-block;
-            width: 24.5%; //no idea why this isn't working at 25% on my machine
-            margin-top: 1.5rem;
-        }*/
 
         .products div img {
             max-width: 75%;
@@ -759,12 +704,12 @@
             font-size: 1rem;
         }
 
-        /*subscribe section*/
+        /*desktop subscribe section*/
         .subscribe-contents {
             width: 615px;
         }
 
-        /*footer section*/
+        /*desktop footer section*/
         address {
             width: 200px;
         }
