@@ -67,4 +67,8 @@ $(document).ready(function() {
         }
     });*/
 
+    $('body').smoothScroll({
+        delegateSelector: 'ul.mainnav a'
+    });
+
 });
