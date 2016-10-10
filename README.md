@@ -24,5 +24,4 @@ Jquery learnings
 - Smooth Scroll 2.0.1 - https://github.com/kswedberg/jquery-smooth-scroll
 
 ## Known Issues
-- Count bubble showing behind cart image instead of on top.
 - Test in FireFox revealed non-show of product categories.

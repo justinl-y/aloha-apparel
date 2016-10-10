@@ -169,16 +169,15 @@
                 justify-content: flex-end;
             }
 
-            .cart-img a img {
+            .cart-image a img {
                 z-index: -1;
             }
 
             .count-bubble {
-                z-index: 1;
                 text-align: center;
                 width: 25px;
                 float: right;
-                margin-top: -42px;
+                margin-top: -50px;
                 margin-left: 35px;
                 background: #e2574c;
                 color: #fff;
