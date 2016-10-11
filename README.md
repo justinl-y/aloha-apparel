@@ -1,6 +1,8 @@
 # project-01b : Aloha Apparel - Advanced CSS, JavaScript and JQuery
 This project was designed to demonstrate advanced features of CSS and implementation of basic JavaScript and JQuery website functionality.
 
+Published project at: https://justinl-y.github.io/project-01b/
+
 ## Technologies Used
 
 - HTML5
@@ -24,4 +26,4 @@ Use of JQuery allowed me to understand manipulation of DOM elements and integrat
 - JQuery Mobile 1.4.5 - http://jquerymobile.com/
 
 ## Known Issues
-- Browser tests revealed no-show of product categories in Firefox.
+- Browser tests revealed no-show of product categories in Firefox and Edge and layout issues with IE11.
