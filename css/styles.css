@@ -97,8 +97,6 @@
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-
-        /*position: fixed; for fixed header stretch*/
     }
 
     .header-contents img {
@@ -304,8 +302,8 @@
     }
 
     .carousel-cell {
-        width: 100%; /*full width*/
-        height: auto; /*height of carousel*/
+        width: 100%;
+        height: auto;
         margin-right: 10px;
     }
 
@@ -682,7 +680,7 @@
         }
 
         .container {
-            max-width: 1240px;
+            width: 1240px; /*max-width: 1240px;*/
             margin: auto;
         }
 
