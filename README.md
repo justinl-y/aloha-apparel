@@ -15,7 +15,7 @@ Published project at: https://justinl-y.github.io/project-01b/
 
 Building on the framework of HTML5 and CSS3 from project-01a this project allowed me to understand some advanced aspects of CSS3 layout such as flexbox.
   
-Implementation of functionality for email validation allowed me to understand control statements.
+Implementation of functionality for email validation allowed me to understand control statements in JavaScript.
 
 Use of JQuery allowed me to understand manipulation of DOM elements and integration of the project with JQuery plugins.
 
