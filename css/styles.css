@@ -232,13 +232,23 @@
     .product-img-wide {
         flex: 2 0 100%;
         position: relative;
-        padding-bottom: 50%;
     }
 
     .product-img-narrow {
         flex: 1 0 50%;
         position: relative;
+    }
+
+    .product-img-wide::before {
         padding-bottom: 50%;
+        content: '';
+        float: left;
+    }
+
+    .product-img-narrow::before {
+        padding-bottom: 100%;
+        content: '';
+        float: left;
     }
 
     .product-categories-text-formatting {
@@ -564,31 +574,24 @@
             flex-basis: 25%;
         }
 
+        /*hack using css browser selector to get firefox and chrome to work together*/
+        .chrome .product-img-narrow::before {
+            padding-bottom: 50%;
+        }
+
         .product-categories-mens {
-            padding-bottom: 25%;
             border-right: 4px solid white;
         }
 
         .product-categories-trends {
-            padding-bottom: 25%;
             border-left: 4px solid white;
         }
 
-        .product-categories-glasses {
-            padding-bottom: 25%;
-        }
-
-        .product-categories-sale {
-            padding-bottom: 25%;
-        }
-
         .product-categories-bags {
-            padding-bottom: 25%;
             border-right: 4px solid white;
         }
 
         .product-categories-womens {
-            padding-bottom: 25%;
             border-left: 4px solid white;
         }
 

@@ -1,7 +1,7 @@
 # project-01b : Aloha Apparel - Advanced CSS, JavaScript and JQuery
 This project was designed to demonstrate advanced features of CSS and implementation of basic JavaScript and JQuery website functionality.
 
-Project displayed at: https://justinl-y.github.io/project-01b/
+Published project at: https://justinl-y.github.io/project-01b/
 
 ## Technologies Used
 
@@ -19,11 +19,12 @@ Implementation of functionality for email validation allowed me to understand co
 
 Use of JQuery allowed me to understand manipulation of DOM elements and integration of the project with JQuery plugins.
 
-## References for JQuery and JQuery Plugins
+## References for JQuery and JavaScript Library / JQuery Plugins
 
 - JQuery 3.1.1 - http://jquery.com/
 - Flickity 2.0.4 - https://github.com/metafizzy/flickity
 - JQuery Mobile 1.4.5 - http://jquerymobile.com/
+- CSS Browser Selector - http://rafael.adm.br/css_browser_selector/
 
 ## Known Issues
-- Browser tests revealed no-show of product categories in Firefox and Edge and some layout issues with IE11.
+- Browser tests revealed no-show of product categories in Edge and layout issues with IE11.
