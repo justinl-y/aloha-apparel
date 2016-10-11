@@ -1,11 +1,7 @@
 'use strict';
 
 $(document).ready(function() {
-    /*//smooth scrolling plugin functionality
-    $('body').smoothScroll ({
-        delegateSelector: 'ul.mainnav a'
-    });*/
-
+    //function for smooth scrolling
     $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
