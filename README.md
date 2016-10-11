@@ -27,4 +27,5 @@ Use of JQuery allowed me to understand manipulation of DOM elements and integrat
 - CSS Browser Selector - http://rafael.adm.br/css_browser_selector/
 
 ## Known Issues
-- Browser tests revealed no-show of product categories in Edge and layout issues with IE11.
+
+- Browser tests revealed layout issues with product categories under IE11. All other browsers displayed fine.
