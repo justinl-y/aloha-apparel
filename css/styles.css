@@ -66,6 +66,15 @@
         outline: none;
     }
 
+    /* Text meant only for screen readers. */
+    .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    }
+
     .seo-description {
         display: none;
     }
@@ -409,6 +418,12 @@
         font-size: 0.75rem;
         border: 0;
         border-radius: 25px;
+    }
+
+    #hidden-label-element {
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+        clip: rect(1px, 1px, 1px, 1px);
     }
 
     .subscribe input[type="text"] {

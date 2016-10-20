@@ -23,7 +23,7 @@
                     <div class="navigation">
                         <nav>
                             <ul class="mainnav">
-                                <li><a href="#about">About</a></li>
+                                <li><a href="#about">About<span class="screen-reader-text"> about Aloha company</span></a></li>
                                 <li><a href="#product-categories">Shop</a></li>
                                 <li><a href="#products">Featured</a></li>
                                 <li><a href="#subscribe" class="last_li">Updates</a></li>
@@ -42,8 +42,8 @@
 
         <section class="banner">
             <div class="banner-text">
-                <h3>New Collection</h3>
-                <h2>Spring/Summer 2016</h2>
+                <h2>New Collection</h2>
+                <h3>Spring/Summer 2016</h3>
             </div> <!--/div banner-text-->
         </section>
 
@@ -171,7 +171,10 @@
                 <p>Stay updated on our latest product releases. Be first to find out about upcoming sales, and get
                     free style tips from our blog. Unsubscribe at any time.</p>
                 <form action="#" method="get" id="subscribe-form">
-                    <input type="text" value="Your Email">
+                    <div id="hidden-label-element">Your email here...
+                    </div>
+                    <input type="text" aria-labelledby="hidden-label-element" value="Your Email"></input>
+                    
                     <input type="button" value="Subscribe">
                 </form>
             </div> <!--/div subscribe-contents-->
@@ -215,6 +218,7 @@
         <script src="js/libs/flickity-2.0.4-pkgd.min.js"></script>
         <script src="js/libs/jquery-mobile-1.4.5.min.js"></script>
         <script src="js/libs/css-browser-selector-0.4.0.js"></script>
+        <script src="js/libs/tota11y.min.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>
