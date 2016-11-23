@@ -66,6 +66,19 @@
         outline: none;
     }
 
+
+    /*helper classes*/
+    .screen-reader-text:focus {
+        clip: auto !important;
+        display: block;
+        height: auto;
+        left: 5px;
+        top: 5px;
+        width: auto;
+        z-index: 100000; /* above all content */
+    }
+
+
     .seo-description {
         display: none;
     }
