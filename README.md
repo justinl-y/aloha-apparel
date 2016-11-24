@@ -28,7 +28,6 @@ Use of JQuery allowed me to understand manipulation of DOM elements and integrat
 - JQuery 3.1.1 - http://jquery.com/
 - Flickity 2.0.4 - https://github.com/metafizzy/flickity
 - JQuery Mobile 1.4.5 - http://jquerymobile.com/
-- CSS Browser Selector - http://rafael.adm.br/css_browser_selector/
 
 ## Known Issues
 
