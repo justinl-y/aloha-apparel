@@ -78,7 +78,6 @@
         z-index: 100000; /* above all content */
     }
 
-
     .seo-description {
         display: none;
     }
@@ -156,17 +155,17 @@
         color: #e2574c;
     }
 
-    .navigation a:visited {
+    .navigation a:visited, .navigation a:hover {
         color: #b64036;
     }
 
     .cart-image {
         flex-basis: 50%;
         order: 2;
-    }
-    .cart-image a {
+
         display: flex;
         justify-content: flex-end;
+        position: relative;
     }
 
     .cart-image img {
@@ -174,32 +173,27 @@
     }
 
     .count-bubble {
+        position: absolute;
         text-align: center;
         width: 22px;
-        float: right;
-        margin-top: -50px;
-        margin-left: 35px;
+        height: 22px;
         background: #e2574c;
         color: #fff;
-        padding: 2px;
+        padding: 1px 11px 3px 5px;
+        border-radius: 13px;
     }
 
     /*banner section*/
     .banner {
         margin-top: 0.75rem;
-        height: 350px;
 
         background: linear-gradient(rgba(105,105,105,0.25), rgba(105,105,105,0.25)),
-            url("../images/banner-girl.png") center bottom no-repeat,
-            url("../images/flower-bkgd.jpg") center bottom;
+            url("../images/banner-girl.png") no-repeat center 60px,
+            url("../images/flower-bkgd.jpg") repeat-x center top;
 
-        background-size: cover,
-            contain,
-            contain;
-
-        background-position-y: 0,
-            75px,
-            0;
+        background-size: cover, 150px 369px, cover;
+        height: 400px;
+        position: relative;
 
         display: flex;
         justify-content: center;
@@ -213,14 +207,14 @@
     }
 
     .banner-text h2 {
-        font-size: 2rem;
-        font-family: 'Playfair Display Regular', "Times New Roman", serif;
-    }
-
-    .banner-text h3 {
         font-size: 0.75rem;
         font-family: 'Raleway Medium', Helvetica, sans-serif;
         text-transform: uppercase;
+    }
+
+    .banner-text h3 {
+        font-size: 2rem;
+        font-family: 'Playfair Display Regular', "Times New Roman", serif;
         margin-bottom: 1em;
     }
 
@@ -239,29 +233,30 @@
     .product-categories {
         display: flex;
         flex-flow: row wrap;
-        text-align: center;
     }
 
     .product-img-wide {
-        flex: 2 0 100%;
         position: relative;
+        width: 100%;
+        /*overflow: hidden;*/
     }
 
     .product-img-narrow {
-        flex: 1 0 50%;
         position: relative;
+        width: 50%;
+        /*overflow: hidden;*/
     }
 
     .product-img-wide::before {
-        padding-bottom: 50%;
-        content: '';
-        float: left;
+        content: "";
+        display: block;
+        padding-top: 50%;
     }
 
     .product-img-narrow::before {
-        padding-bottom: 100%;
-        content: '';
-        float: left;
+        content: "";
+        display: block;
+        padding-top: 100%;
     }
 
     .product-categories-text-formatting {
@@ -467,7 +462,6 @@
     }
 
     .footer-contents {
-        /*max-width: 1240px;*/
         text-align: center;
     }
 
@@ -561,11 +555,11 @@
         }
 
         .banner-text h2 {
-            font-size: 3rem;
+            font-size: 1rem;
         }
 
         .banner-text h3 {
-            font-size: 1rem;
+            font-size: 3rem;
         }
 
         /*tablet about section*/
@@ -585,11 +579,6 @@
 
         .product-img-narrow {
             flex-basis: 25%;
-        }
-
-        /*hack using css browser selector to get firefox and chrome to work together*/
-        .chrome .product-img-narrow::before {
-            padding-bottom: 50%;
         }
 
         .product-categories-mens {
@@ -702,7 +691,16 @@
 
         /*desktop banner-section*/
         .banner {
-            height: 500px;
+            background-size: cover, 250px 615px, contain;
+            height: 550px;
+        }
+
+        .banner-text h2 {
+            font-size: 1.5rem;
+        }
+
+        .banner-text h3 {
+            font-size: 4rem;
         }
 
         /*desktop about section*/
