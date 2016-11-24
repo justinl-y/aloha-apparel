@@ -1,4 +1,4 @@
-# project-01b : Aloha Apparel - Advanced CSS, JavaScript and JQuery
+# Aloha Apparel - HTML, CSS, JavaScript & JQuery
 This project was designed to demonstrate implementation of HTML5 semantic markup, CSS with responsive web design and implementation of basic JavaScript and JQuery for website functionality.
 
 <kbd>![Image of Aloha](https://github.com/justinl-y/project-01b/blob/master/readme-screenshot.png "Aloha")</kbd>
